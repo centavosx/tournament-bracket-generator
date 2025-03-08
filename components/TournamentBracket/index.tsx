@@ -12,7 +12,10 @@ const TournamentBracket = ({ children }: TournamentBracketProps) => {
           showsHorizontalScrollIndicator={false}
           nestedScrollEnabled
         >
-          <ScrollView showsVerticalScrollIndicator={false}>
+          <ScrollView
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={{ flexDirection: "column", gap: 128 }}
+          >
             {/**
              * The goal is to pass multiple brackets for single/double elimnination tournament
              */}

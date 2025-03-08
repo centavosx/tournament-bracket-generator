@@ -23,10 +23,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 64,
     alignItems: "center",
+    flex: 1,
   },
   tournamentColumn: {
     flexDirection: "column",
-    gap: 24,
+    gap: 48,
     justifyContent: "space-around",
     height: "100%",
   },

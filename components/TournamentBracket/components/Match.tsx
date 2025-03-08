@@ -25,7 +25,7 @@ export const Match = ({ title, player1, player2 }: MatchProps) => {
 const styles = StyleSheet.create({
   container: {
     width: 150,
-    height: 200,
+    position: "relative",
     overflow: "hidden",
     gap: 16,
   },

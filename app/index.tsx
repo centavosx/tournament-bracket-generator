@@ -1,13 +1,14 @@
 import TournamentBracket from "@/components/TournamentBracket";
 import { EliminationRow } from "@/components/TournamentBracket/components/Elimination";
 import { useGenerateMatches } from "@/components/TournamentBracket/utils/useGenerateMatches";
+import { View } from "react-native";
 
 const Index = () => {
-  const { losers: eliminations } = useGenerateMatches(16);
+  const { eliminations, losers } = useGenerateMatches(16);
   return (
     <TournamentBracket>
       <EliminationRow matches={eliminations} />
-      {/* <EliminationRow /> */}
+      <EliminationRow matches={losers} />
     </TournamentBracket>
   );
 };
